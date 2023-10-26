@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
+    <title>Library</title>
+
+    <link rel=" icon" href="icons/5269077_book_education_library_notebook_paper_icon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Electrolize&family=Roboto:wght@400;700&family=Martian+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TicTacToe</h1>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="game">
+
+            <img class="enemy girl" src="images/girl-159313.svg">
+            <img class="enemy man" src="images/man-159564.svg">
+            <img class="enemy dragon" src="images/dragon-154565.svg">
+
+            <div class="game_board" id="game_board">
+                <button class="tile" id="0"></button>
+                <button class="tile" id="1"></button>
+                <button class="tile" id="2"></button>
+                <button class="tile" id="3"></button>
+                <button class="tile" id="4"></button>
+                <button class="tile" id="5"></button>
+                <button class="tile" id="6"></button>
+                <button class="tile" id="7"></button>
+                <button class="tile" id="8"></button>
+            </div>
+
+            <div class="enemy_text_container">
+                <div class="stage_1">
+                    <h3>First Challenger: Misty</h3>
+                    <p>She's traveled far across the mountains of WooDoo. Misty was ranked number 1 TicTacToe master in
+                        her
+                        village and now seeks
+                        to challenge herself against the best in China. You are her next opponent.
+                    </p>
+                </div>
+                <div class="stage_2">
+                    <h3>Second Challenger: Wang Yong</h3>
+                    <p>World class TicTacToe master Wang Yong steps forth. He's traveled farther than any mere mortal
+                        should, and crushed many's (besides one) hopes of
+                        becoming world
+                        champion. You are his next
+                        opponent.
+                    </p>
+                </div>
+                <div class="stage_3">
+                    <h3>Irrinay, The Unbeatable</h3>
+                    <p>There is only but one other who has defeated Wang. The Unbeatable Irrinay.
+                        He is the creator of TicTacToe and destroyer of men. <br><br>
+                        Only a fool would step into the
+                        hungry
+                        Dragons Lair
+                        looking for defeat, but your need to be the best is what drives you. <br><br>
+                        Irrinay is your final opponent.<br><br>
+                        ... Mercy on your soul
+
+                    </p>
+                </div>
+                <button id="start_button" class="start_stage">start</button>
+            </div>
+
+            <div class="display_winner">
+                <div class="winner">
+                    <h2 class="winner_title">Results:</h2>
+                    <h2 class="winner_person"></h2>
+                    <div class="end_game_buttons">
+                        <button class="restart_button" id="restart_button"
+                            onclick="window.location.reload()">Restart</button>
+                        <button class="continue_button second_stage" id="continue_button">Continue</button>
+                        <button class="continue_button final_stage" id="continue_button">Continue</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

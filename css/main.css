@@ -1,0 +1,163 @@
+:root {
+    font-family: 'Martian Mono', monospace;
+
+    --drop-shadow: drop-shadow(10px 10px 0px #acacac);
+    --electrolize: 'Electrolize', sans-serif;
+    --martain_mono: 'Martian Mono', monospace;
+
+    /*background-color: rgb(18, 95, 121);*/
+    /*background-color: rgb(150, 150, 150);*/
+
+    background-color: bisque;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.game {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.enemy {
+    width: 250px;
+    position: relative;
+    left: 120px;
+    transition: left ease 1s;
+}
+
+.dragon {
+    width: 270px;
+}
+
+.game h3 {
+    text-decoration: underline;
+}
+
+.game p {
+    width: 350px;
+    line-height: 23px;
+}
+
+.enemy_text_container {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: relative;
+    right: -200px;
+    transition: ease-in-out 1s;
+}
+
+.enemy_text_container button {
+    width: 80px;
+    align-self: center;
+    margin-top: 20px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.game_board {
+    width: 550px;
+    height: 550px;
+
+    position: relative;
+    right: -18px;
+
+    display: none;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    background-size: 100% 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.game_board .tile {
+    background-color: rgba(0, 0, 0, 0.363);
+
+    font-size: 9rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.display_winner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 300px;
+    position: relative;
+    right: -200px;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 0;
+}
+
+.display_winner .winner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.winner h2 {
+    font-size: 20px;
+}
+
+.winner_title {
+    text-decoration: underline;
+}
+
+.restart_button {
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.continue_button {
+    display: none;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stage_2 {
+    display: none;
+}
+
+.stage_3 {
+    display: none;
+}
+
+.start_stage1 {
+    display: none;
+}
+
+.start_stage2 {
+    display: none;
+}
